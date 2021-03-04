@@ -10,6 +10,9 @@ POUT = test.out
 radix: src/sort/radix.c tests/radix-main.c
 	${CC} tests/radix-main.c ${SRC} ${CFLAGS} -o ${POUT}
 
+bin-search: src/bsearch.c tests/bin-search-main.c
+	${CC} tests/bin-search-main.c ${SRC} ${CFLAGS} -o ${POUT}
+
 run: test
 	./${POUT}
 
